@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Makers — Photography Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- sprocket rail, purely decorative, fixed to viewport edges -->
+<div class="sprocket-rail left" aria-hidden="true"></div>
+<div class="sprocket-rail right" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#top" class="logo">Memory&nbsp;Makers</a>
+  <nav class="main-nav">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navList">
+      <li><a href="#about">Studio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Contact Sheet</a></li>
+      <li><a href="#beforeAfter">Before/After</a></li>
+      <li><a href="#testimonials">Words</a></li>
+      <li><a href="#contact">Book a Session</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div class="light-leak" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="aperture" id="aperture" aria-hidden="true">
+        <div class="blade b1"></div>
+        <div class="blade b2"></div>
+        <div class="blade b3"></div>
+        <div class="blade b4"></div>
+        <div class="blade b5"></div>
+        <div class="blade b6"></div>
+      </div>
+      <p class="eyebrow">Est. in a darkroom, still developing</p>
+      <h1>We don't take pictures.<br>We hold onto light<br>a little longer.</h1>
+      <p class="hero-sub">Memory Makers is a photography studio for portraits, weddings, and the everyday moments people forget to slow down for.</p>
+      <a href="#contact" class="btn btn-primary">Book a session</a>
+    </div>
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <span></span>
+      <small>scroll</small>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="frame-number">Frame 01</span>
+      <h2>The studio</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="lede">Memory Makers started with one 35mm camera, a spare bathroom turned darkroom, and the stubborn belief that a photograph should feel like a memory, not a performance.</p>
+        <p>Today we're a small team of photographers and one very opinionated cat who supervises every shoot from a windowsill. We still shoot on film for a portion of every session, because grain and light leaks have never once lied to us.</p>
+        <p>We work out of natural light studios and, more often, wherever your story actually happens: a kitchen table, a wedding aisle, a hospital hallway, a rooftop at golden hour.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">12</span><span class="stat-label">years behind the lens</span></div>
+        <div class="stat"><span class="stat-num">640+</span><span class="stat-label">rolls of film shot</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">photographers on staff</span></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">supervising cat</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <span class="frame-number">Frame 02</span>
+      <h2>What we shoot</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <h3>Portraits</h3>
+        <p>Solo, family, or the friend group that swears it's "just for fun" and then frames three of them. Studio or on location.</p>
+        <span class="service-tag">from ₹4,500</span>
+      </article>
+      <article class="service-card">
+        <h3>Weddings</h3>
+        <p>Full-day coverage that catches the ceremony and the ten minutes beforehand when everyone's hands are shaking.</p>
+        <span class="service-tag">from ₹35,000</span>
+      </article>
+      <article class="service-card">
+        <h3>Events</h3>
+        <p>Birthdays, launches, reunions, and the kind of candid chaos that photographs better than anything posed.</p>
+        <span class="service-tag">from ₹8,000</span>
+      </article>
+      <article class="service-card">
+        <h3>Product &amp; Brand</h3>
+        <p>Clean, considered shots for shops and small brands that want their catalogue to look like it took more than a phone.</p>
+        <span class="service-tag">from ₹6,000</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALLERY — contact sheet style -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <span class="frame-number">Frame 03</span>
+      <h2>Contact sheet</h2>
+      <p class="section-note">A few frames we didn't cut. Hover to develop.</p>
+    </div>
+    <div class="contact-sheet" id="contactSheet">
+      <!-- frames injected by JS, but degrade gracefully if JS fails -->
+      <noscript>
+        <p>Enable JavaScript to view the gallery.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="before-after" id="beforeAfter">
+    <div class="section-head">
+      <span class="frame-number">Frame 04</span>
+      <h2>Before the edit</h2>
+      <p class="section-note">Drag to see what a raw frame looks like before it leaves the darkroom.</p>
+    </div>
+    <div class="ba-slider" id="baSlider">
+      <div class="ba-image ba-before">
+        <img src="images/pexels-eberhardgross-443446.jpg" alt="Raw, unedited photo straight out of camera">
+      </div>
+      <div class="ba-image ba-after" id="baAfter">
+        <img src="images/pexels-eberhardgross-443446.jpg" alt="Final edited version of the same photo">
+      </div>
+      <div class="ba-label ba-label-before">Raw</div>
+      <div class="ba-label ba-label-after">Edited</div>
+      <div class="ba-handle" id="baHandle" tabindex="0" role="slider" aria-label="Drag to compare raw and edited photo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <span class="ba-handle-grip"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <span class="frame-number">Frame 05</span>
+      <h2>Word of mouth</h2>
+    </div>
+    <div class="testimonial-track" id="testimonialTrack">
+      <blockquote class="testimonial active">
+        <p>"They photographed my daughter's wedding and somehow also got a photo of my mother-in-law finally laughing. I didn't think that was possible."</p>
+        <cite>— Priya S., bride's mother</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Zero awkward posing. I forgot I was being photographed halfway through, which is exactly what I wanted."</p>
+        <cite>— Rohit M., portrait client</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Our product shots finally look like the store, not like a spare room with a bedsheet backdrop. Because it wasn't."</p>
+        <cite>— Meera K., shop owner</cite>
+      </blockquote>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <span class="frame-number">Frame 06</span>
+      <h2>Book a session</h2>
+      <p class="section-note">Tell us the date, the light you're picturing, and what you don't want to forget.</p>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-row">
+        <label for="service">What are we shooting?</label>
+        <select id="service" name="service">
+          <option value="portrait">Portrait</option>
+          <option value="wedding">Wedding</option>
+          <option value="event">Event</option>
+          <option value="product">Product / Brand</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="date">Preferred date</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div class="form-row full">
+        <label for="message">A few details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Location, headcount, the vibe you're after..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send inquiry</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="logo small">Memory&nbsp;Makers</span>
+    <p>&copy; <span id="year"></span> Memory Makers Photography. Shot on film and good intentions.</p>
+    <div class="footer-links">
+      <a href="#hero">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
